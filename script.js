@@ -6,7 +6,7 @@ let btn=document.querySelector("#btn")
 
 btn.addEventListener("click", ()=>{
 	if(name.value.trim()==""||age.value.trim()==""){
-		alert("Please enter valid details.")
+		alert("Please enter valid details")
 		return;
 	}
 
@@ -17,7 +17,7 @@ btn.addEventListener("click", ()=>{
 		if(age.value>18 ){
 			resolve(`Welcome, ${name.value}. You can vote.`)
 		}else{
-			reject(`Oh sorry ${name.value} . You aren't old enough.`)
+			reject(`Oh sorry ${name.value}. You aren't old enough.`)
 			}
 	}, 4000)
 });
